@@ -1,3 +1,8 @@
+This is a simple demo shows how wasm-similar works,
+It will parse two text and give your modification operations.
+Powered by similiar
+
+这是一个展示wasm-similar如何工作的样例demo
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
