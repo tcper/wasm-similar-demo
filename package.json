@@ -2,6 +2,7 @@
   "name": "wasm-similar-demo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tcper.github.io/wasm-similar-demo",
   "dependencies": {
     "@fluentui/react": "8.81.1",
     "@testing-library/jest-dom": "5.16.4",
