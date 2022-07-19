@@ -7,8 +7,10 @@ import { Stack } from '@fluentui/react/lib/Stack';
 import { Separator } from '@fluentui/react/lib/Separator';
 import { Label } from '@fluentui/react/lib/Label';
 import * as wasm from 'wasm-similar';
+import { CopyBlock, dracula } from "react-code-blocks";
 
 const stackStyles = { root: { width: 650 } };
+const codeStyles = { root: { width: 800 } };
 const stackTokens = { childrenGap: 50 };
 const columnProps = {
   tokens: { childrenGap: 15 },
@@ -96,6 +98,23 @@ function App() {
         <div style={style}>
           {result}
         </div>
+        
+        <div style={{width:'800px', color: 'black'}}>如何使用How to：</div>
+        <Stack horizontal tokens={stackTokens} styles={codeStyles}>
+        
+          <CopyBlock
+              text={`npm install wasm-similar --save`}
+              theme={dracula}
+              language="bash"
+            />
+        </Stack>
+        <Stack horizontal tokens={stackTokens} styles={codeStyles}>
+          <CopyBlock
+              text={`import * as wasm from 'wasm-similar';\nconst result = wasm.compare_from_chars(source, target);`}
+              theme={dracula}
+              language="js"
+            />
+        </Stack>
       </header>
     </div>
   );
